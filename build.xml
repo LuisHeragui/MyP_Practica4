@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="practica2" default="practica2.jar" basedir="." >
+<project name="practica4" default="practica4.jar" basedir="." >
 
   <property name="build.dir"     value="build" />
   <property name="src.dir"       value="src" />
   <property name="lib.dir"       value="lib" />
   <property name="doc.dir"       value="doc" />
 
-  <target name="practica2.jar" depends="compile.practica2">
-    <jar jarfile="practica2.jar">
+  <target name="practica4.jar" depends="compile.practica4">
+    <jar jarfile="practica4.jar">
       <zipfileset dir="${build.dir}" prefix="" />
       <manifest>
-        <attribute name="Main-Class" value="DemoRobot"/>
+        <attribute name="Main-Class" value="MadMax"/>
       </manifest>
     </jar>
   </target>
 
-  <target name="compile.practica2">
+  <target name="compile.practica4">
     <mkdir dir="${build.dir}"/>
     <javac srcdir="${src.dir}"
            destdir="${build.dir}"
@@ -33,17 +33,17 @@
     </javac>
   </target>
 
-  <target name="doc" depends="compile.practica2">
+  <target name="doc" depends="compile.practica4">
     <mkdir dir="${doc.dir}"/>
   </target>
 
   <target name="clean">
-    <delete file="practica2.jar"/>
+    <delete file="practica4.jar"/>
     <delete dir="${build.dir}"/>
     <delete dir="${doc.dir}"/>
   </target>
 
-  <target name="test" depends="compile.practica2">
+  <target name="test" depends="compile.practica4">
     <junit printsummary="yes" haltonfailure="no">
       <formatter type="plain" usefile="false" />
       <classpath>
