@@ -19,7 +19,7 @@ public abstract class Motor {
      * @return el ataque del motor.
      */
     public int getAtaque() {
-        //Código...
+    return ataque;
     }
 
     /**
@@ -27,7 +27,7 @@ public abstract class Motor {
      * @return la defensa del motor.
      */
     public int getDefensa() {
-        //Código...
+       return defensa;
     }
 
     /**
@@ -35,7 +35,7 @@ public abstract class Motor {
      * @return la velocidad del motor.
      */
     public int getVelocidad() {
-        //Código...
+        return velocidad;
     }
 
     /**
@@ -43,7 +43,7 @@ public abstract class Motor {
      * @return el costo del motor.
      */
     public int getCosto() {
-        //Código...
+        return costo;
     }
 
     /**
@@ -51,6 +51,6 @@ public abstract class Motor {
      * @return el tipo del motor.
      */
     public String getTipo() {
-        //Código...
+        return tipo;
     }
 }
