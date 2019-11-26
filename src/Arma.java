@@ -27,7 +27,7 @@ public abstract class Arma {
      * @return la defensa del arma.
      */
     public int getDefensa() {
-        //Código...
+        return defensa;
     }
 
     /**
@@ -35,7 +35,7 @@ public abstract class Arma {
      * @return la velocidad del arma.
      */
     public int getVelocidad() {
-        //Código...
+        return velocidad;
     }
 
     /**
@@ -43,7 +43,7 @@ public abstract class Arma {
      * @return el costo del arma.
      */
     public int getCosto() {
-        //Código...
+        return costo;
     }
 
     /**
@@ -51,6 +51,6 @@ public abstract class Arma {
      * @return el tipo del arma.
      */
     public String getTipo() {
-        //Código...
+        return tipo;
     }
 }

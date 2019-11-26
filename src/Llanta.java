@@ -27,7 +27,7 @@ public abstract class Llanta {
      * @return la defensa de la llanta.
      */
     public int getDefensa() {
-        //Código...
+        return defensa;
     }
 
     /**
@@ -35,7 +35,7 @@ public abstract class Llanta {
      * @return la velocidad de la llanta.
      */
     public int getVelocidad() {
-        //Código...
+        return velocidad;
     }
 
     /**
@@ -43,7 +43,7 @@ public abstract class Llanta {
      * @return el costo de la llanta.
      */
     public int getCosto() {
-        //Código...
+        return costo;
     }
 
     /**
@@ -51,6 +51,6 @@ public abstract class Llanta {
      * @return el tipo de la llanta.
      */
     public String getTipo() {
-        //Código...
+        return tipo;
     }
 }
