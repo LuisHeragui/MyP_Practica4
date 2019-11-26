@@ -7,6 +7,10 @@ public class MotorDiesel extends Motor {
      * Constuye un motor diesel.
      */
     public MotorDiesel() {
-        //Código...
+      ataque = 12;
+      defensa = 22;
+      velocidad = 5;
+      costo = 45;
+      tipo = "Diesel";
     }
 }

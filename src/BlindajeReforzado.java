@@ -7,6 +7,10 @@ public class BlindajeReforzado extends Blindaje {
      * Constuye un blindaje reforzado.
      */
     public BlindajeReforzado() {
-        //Código...
+      ataque = 10;
+      defensa = 45;
+      velocidad = 1;
+      costo = 50;
+      tipo = "Reforzado";
     }
 }

@@ -7,6 +7,10 @@ public class CarroceriaCamion extends Carroceria {
      * Constuye una carroceria camión.
      */
     public CarroceriaCamion() {
-        //Código...
+      ataque =  13;
+      defensa = 23;
+      velocidad = 33;
+      costo = 80;
+      tipo = "Camion";
     }
 }

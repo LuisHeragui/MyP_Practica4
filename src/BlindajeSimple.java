@@ -7,6 +7,10 @@ public class BlindajeSimple extends Blindaje {
      * Constuye un blindaje simple.
      */
     public BlindajeSimple() {
-        //Código...
+      ataque = 5;
+      defensa = 30;
+      velocidad = 1;
+      costo = 40;
+      tipo = "Simple";
     }
 }
