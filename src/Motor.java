@@ -19,7 +19,7 @@ public abstract class Motor {
      * @return el ataque del motor.
      */
     public int getAtaque() {
-    return ataque;
+        return ataque;
     }
 
     /**
