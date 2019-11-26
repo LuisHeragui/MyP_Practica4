@@ -3,8 +3,8 @@
  */
 public class Auto {
 
-    //* La llanta del auto. */
-    private Llanta llanta;
+    //* Las llantas del auto. */
+    private Llanta llantas;
     //* El motor del auto. */
     private Motor motor;
     //* La carrocería del auto. */
@@ -17,15 +17,15 @@ public class Auto {
     /**
      * Construye un auto a partir de su tipo de llanta, su tipo de motor, su
      * tipo de carrocería, su tipo de blindaje y su tipo de arma.
-     * @param llanta el tipo de llanta del auto.
+     * @param llantas el tipo de llanta del auto.
      * @param motor el tipo de motor del auto.
      * @param carroceria el tipo de carrocería del auto.
      * @param blindaje el tipo de blindaje del auto.
      * @param arma el tipo de arma del auto.
      */
-    public Auto(Llanta llanta, Motor motor, Carroceria carroceria,
+    public Auto(Llanta llantas, Motor motor, Carroceria carroceria,
                 Blindaje blindaje, Arma arma) {
-        this.llanta = llanta;
+        this.llantas = llantas;
         this.motor = motor;
         this.carroceria = carroceria;
         this.blindaje = blindaje;
@@ -37,8 +37,8 @@ public class Auto {
      * @return el ataque del auto.
      */
     public int getAtaque() {
-        return llanta.getAtaque() + motor.getAtaque() + carroceria.getAtaque() +
-               blindaje.getAtaque() + arma.getAtaque();
+        return llantas.getAtaque() + motor.getAtaque() + carroceria.getAtaque()
+               + blindaje.getAtaque() + arma.getAtaque();
     }
 
     /**
@@ -46,9 +46,9 @@ public class Auto {
      * @return la defensa del auto.
      */
     public int getDefensa() {
-        return llanta.getDefensa() + motor.getDefensa() +
-               carroceria.getDefensa() + blindaje.getDefensa()
-               + arma.getDefensa();
+        return llantas.getDefensa() + motor.getDefensa() +
+               carroceria.getDefensa() + blindaje.getDefensa() +
+               arma.getDefensa();
     }
 
     /**
@@ -56,9 +56,9 @@ public class Auto {
      * @return la velocidad del auto.
      */
     public int getVelocidad() {
-      return llanta.getVelocidad() + motor.getVelocidad() +
-             carroceria.getVelocidad() + blindaje.getVelocidad()
-             + arma.getVelocidad();
+      return llantas.getVelocidad() + motor.getVelocidad() +
+             carroceria.getVelocidad() + blindaje.getVelocidad() +
+             arma.getVelocidad();
     }
 
     /**
@@ -66,29 +66,30 @@ public class Auto {
      * @return el costo del auto.
      */
     public int getCosto() {
-      return llanta.getCosto() + motor.getCosto() +
-             carroceria.getCosto() + blindaje.getCosto()
-             + arma.getCosto();
+      return llantas.getCosto() + motor.getCosto() + carroceria.getCosto() +
+             blindaje.getCosto() + arma.getCosto();
     }
 
     /**
      * Muestra los componentes y las características del auto.
      */
     public void muestraAuto() {
-        System.out.println("Tu auto es el siguiente:\n" +
-                           "Llantas: %s\n" +
-                           "Motor: %s\n" +
-                           "Carrocería: %s\n" +
-                           "Blindaje: %s\n" +
-                           "Arma: %s", llanta.getTipo(), motor.getTipo(),
-                           carroceria.getTipo(), blindaje.getTipo(),
-                           arma.getTipo());
-        System.out.println("Tu auto tiene las siguientes características:\n" +
-                           "Ataque: %d" +
-                           "Defensa: %d" +
-                           "Velocidad: %d" +
-                           "Costo: $%d", this.getAtaque(), this.getDefensa(),
-                           this.getVelocidad(), this.getCosto());
+        String s = String.format("El auto construido es el siguiente:\n" +
+                                 "  Llantas: %s\n" +
+                                 "  Motor: %s\n" +
+                                 "  Carrocería: %s\n" +
+                                 "  Blindaje: %s\n" +
+                                 "  Arma: %s", llantas.getTipo(),
+                                 motor.getTipo(), carroceria.getTipo(),
+                                 blindaje.getTipo(), arma.getTipo());
+        System.out.println(s);
+        s = String.format("El auto tiene las siguientes características:\n" +
+                          "  Ataque: %d" +
+                          "  Defensa: %d" +
+                          "  Velocidad: %d\n" +
+                          "Costo: $%d", this.getAtaque(), this.getDefensa(),
+                          this.getVelocidad(), this.getCosto());
+        System.out.println(s);
 
     }
 }

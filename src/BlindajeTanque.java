@@ -11,6 +11,6 @@ public class BlindajeTanque extends Blindaje {
       defensa = 70;
       velocidad = 1;
       costo = 80;
-      tipo = "Tanque";
+      tipo = "Tanque.";
     }
 }

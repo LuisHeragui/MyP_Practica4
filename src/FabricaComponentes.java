@@ -9,6 +9,6 @@ public interface FabricaComponentes {
      * @param tipoComponente el tipo de componente que queremos de la fábrica.
      * @return un componente de la fábrica.
      */
-    public Object getComponente(String tipoComponente)();
+    public Object getComponente(String tipoComponente);
 
 }

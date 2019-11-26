@@ -11,6 +11,6 @@ public class CarroceriaCasual extends Carroceria {
       defensa = 50;
       velocidad = 10;
       costo = 70;
-      tipo = "Casual";
+      tipo = "Casual.";
     }
 }

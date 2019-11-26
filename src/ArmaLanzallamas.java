@@ -11,6 +11,6 @@ public class ArmaLanzallamas extends Arma {
         defensa = 0;
         velocidad = 0;
         costo = 80;
-        tipo = "Lanzallamas.
+        tipo = "Lanzallamas.";
     }
 }

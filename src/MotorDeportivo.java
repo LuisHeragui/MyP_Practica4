@@ -11,6 +11,6 @@ public class MotorDeportivo extends Motor {
       defensa = 12;
       velocidad = 8;
       costo = 35;
-      tipo = "Deportivo";
+      tipo = "Deportivo.";
     }
 }

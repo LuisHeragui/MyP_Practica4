@@ -11,6 +11,6 @@ public class BlindajeSimple extends Blindaje {
       defensa = 30;
       velocidad = 1;
       costo = 40;
-      tipo = "Simple";
+      tipo = "Simple.";
     }
 }

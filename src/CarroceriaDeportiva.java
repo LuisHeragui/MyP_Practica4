@@ -11,6 +11,6 @@ public class CarroceriaDeportiva extends Carroceria {
       defensa = 25;
       velocidad = 17;
       costo = 75;
-      tipo = "Deportivo";
+      tipo = "Deportiva.";
     }
 }

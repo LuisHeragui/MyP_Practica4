@@ -11,6 +11,6 @@ public class CarroceriaCamion extends Carroceria {
       defensa = 23;
       velocidad = 33;
       costo = 80;
-      tipo = "Camion";
+      tipo = "Camión.";
     }
 }

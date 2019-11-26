@@ -11,6 +11,6 @@ public class MotorDiesel extends Motor {
       defensa = 22;
       velocidad = 5;
       costo = 45;
-      tipo = "Diesel";
+      tipo = "Diesel.";
     }
 }

@@ -11,6 +11,6 @@ public class BlindajeReforzado extends Blindaje {
       defensa = 45;
       velocidad = 1;
       costo = 50;
-      tipo = "Reforzado";
+      tipo = "Reforzado.";
     }
 }

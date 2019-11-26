@@ -11,6 +11,6 @@ public class MotorSimple extends Motor {
       defensa = 25;
       velocidad = 15;
       costo = 60;
-      tipo = "Simple";
+      tipo = "Simple.";
     }
 }
