@@ -7,10 +7,10 @@ public class LlantaOffRoad extends Llanta {
      * Constuye una llanta off-road.
      */
     public LlantaOffRoad() {
-        ataque = 50;
-        defensa = 20;
+        ataque = 10;
+        defensa = 10;
         velocidad = 30;
         costo = 70;
-        tipo = "Llanta Off-Road.";
+        tipo = "Off-Road.";
     }
 }

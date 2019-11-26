@@ -7,10 +7,10 @@ public class LlantaSimple extends Llanta {
      * Constuye una llanta simple.
      */
     public LlantaSimple() {
-        ataque = 10;
-        defensa = 10;
-        velocidad = 10;
+        ataque = 0;
+        defensa = 0;
+        velocidad = 50;
         costo = 50;
-        tipo = "Llanta Simple.";
+        tipo = "Simples.";
     }
 }

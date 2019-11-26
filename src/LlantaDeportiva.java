@@ -7,10 +7,10 @@ public class LlantaDeportiva extends Llanta {
      * Constuye una llanta deportiva.
      */
     public LlantaDeportiva() {
-        ataque = 15;
-        defensa = 15;
-        velocidad = 50;
+        ataque = 0;
+        defensa = 0;
+        velocidad = 100;
         costo = 60;
-        tipo = "Llanta Deportiva.";
+        tipo = "Deportivas.";
     }
 }

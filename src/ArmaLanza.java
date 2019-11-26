@@ -7,6 +7,10 @@ public class ArmaLanza extends Arma {
      * Constuye una arma lanza.
      */
     public ArmaLanza() {
-        //Código...
+        ataque = 25;
+        defensa = 0;
+        velocidad = 0;
+        costo = 25;
+        tipo = "Lanza.";
     }
 }

@@ -7,6 +7,10 @@ public class ArmaMetralleta extends Arma {
      * Constuye una arma metralleta.
      */
     public ArmaMetralleta() {
-        //Código...
+        ataque = 100;
+        defensa = 0;
+        velocidad = 0;
+        costo = 100;
+        tipo = "Metralleta.";
     }
 }

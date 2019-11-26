@@ -9,7 +9,7 @@ public class FabricaArmas implements FabricaComponentes {
      * @return un componente de la fábrica.
      */
     public Object getComponente(String tipoComponente) {
-        //Código.
+        return getArma(tipoComponente);
     }
 
     /**
@@ -18,6 +18,18 @@ public class FabricaArmas implements FabricaComponentes {
      * @return una arma de la fábrica.
      */
     public Arma getArma(String tipoArma) {
-        //Código.
+        if (tipoArma == null)
+            return null;
+        else if (tipoArma.equalsIgnoreCase("arpon"))
+            return new ArmaArpon();
+        else if (tipoArma.equalsIgnoreCase("lanzallamas"))
+            return new ArmaLanzallamas();
+        else if (tipoArma.equalsIgnoreCase("lanza"))
+            return new ArmaLanza();
+        else if (tipoArma.equalsIgnoreCase("sierra"))
+            return new ArmaSierra();
+        else if (tipoArma.equalsIgnoreCase("metralleta"))
+            return new ArmaMetralleta();
+        return null;
     }
 }

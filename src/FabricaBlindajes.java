@@ -9,7 +9,7 @@ public class FabricaBlindajes implements FabricaComponentes {
      * @return un componente de la fábrica.
      */
     public Object getComponente(String tipoComponente) {
-        //Código.
+        return getBlindaje(tipoComponente);
     }
 
     /**
@@ -18,6 +18,14 @@ public class FabricaBlindajes implements FabricaComponentes {
      * @return un blindaje de la fábrica.
      */
     public Blindaje getBlindaje(String tipoBlindaje) {
-        //Código.
+        if (tipoBlindaje == null)
+            return null;
+        else if (tipoBlindaje.equalsIgnoreCase("simple"))
+            return new BlindajeSimple();
+        else if (tipoBlindaje.equalsIgnoreCase("reforzado"))
+            return new BlindajeReforzado();
+        else if (tipoBlindaje.equalsIgnoreCase("tanque"))
+            return new BlindajeTanque();
+        return null;
     }
 }

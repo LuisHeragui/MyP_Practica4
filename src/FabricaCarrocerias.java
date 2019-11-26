@@ -9,7 +9,7 @@ public class FabricaCarrocerias implements FabricaComponentes {
      * @return un componente de la fábrica.
      */
     public Object getComponente(String tipoComponente) {
-        //Código.
+        return getCarroceria(tipoComponente);
     }
 
     /**
@@ -18,6 +18,14 @@ public class FabricaCarrocerias implements FabricaComponentes {
      * @return una carroceria de la fábrica.
      */
     public Carroceria getCarroceria(String tipoCarroceria) {
-        //Código.
+        if (tipoCarroceria == null)
+            return null;
+        else if (tipoCarroceria.equalsIgnoreCase("casual"))
+            return new CarroceriaCasual();
+        else if (tipoCarroceria.equalsIgnoreCase("camion"))
+            return new CarroceriaCamion();
+        else if (tipoCarroceria.equalsIgnoreCase("deportiva"))
+            return new CarroceriaDeportiva();
+        return null;
     }
 }

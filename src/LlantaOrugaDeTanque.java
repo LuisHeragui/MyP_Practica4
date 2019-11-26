@@ -7,10 +7,10 @@ public class LlantaOrugaDeTanque extends Llanta {
      * Constuye una llanta oruga de tanque.
      */
     public LlantaOrugaDeTanque() {
-        ataque = 20;
+        ataque = 0;
         defensa = 50;
-        velocidad = 20;
+        velocidad = 40;
         costo = 80;
-        tipo = "Llanta Oruga de Tanque.";
+        tipo = "Orugas de Tanque.";
     }
 }

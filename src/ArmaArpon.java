@@ -7,10 +7,10 @@ public class ArmaArpon extends Arma {
      * Constuye una arma arpón.
      */
     public ArmaArpon() {
-        ataque = 15;
-        defensa = 15;
-        velocidad = 50;
-        costo = 100;
-        tipo = "Llanta Deportiva";
+        ataque = 50;
+        defensa = 0;
+        velocidad = 0;
+        costo = 50;
+        tipo = "Arpón.";
     }
 }

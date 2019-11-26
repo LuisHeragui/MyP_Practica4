@@ -9,7 +9,7 @@ public class FabricaMotores implements FabricaComponentes {
      * @return un componente de la fábrica.
      */
     public Object getComponente(String tipoComponente) {
-        //Código.
+        return getMotor(tipoComponente);
     }
 
     /**
@@ -18,6 +18,14 @@ public class FabricaMotores implements FabricaComponentes {
      * @return un motor de la fábrica.
      */
     public Motor getMotor(String tipoMotor) {
-        //Código.
+        if (tipoMotor == null)
+            return null;
+        else if (tipoMotor.equalsIgnoreCase("deportivo"))
+            return new MotorDeportivo();
+        else if (tipoMotor.equalsIgnoreCase("diesel"))
+            return new MotorDiesel();
+        else if (tipoMotor.equalsIgnoreCase("simple"))
+            return new MotorSimple();
+        return null;
     }
 }
