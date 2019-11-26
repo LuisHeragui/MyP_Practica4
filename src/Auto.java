@@ -75,7 +75,6 @@ public class Auto {
      * Muestra los componentes y las características del auto.
      */
     public void muestraAuto() {
-<<<<<<< HEAD
         System.out.println("Tu auto es el siguiente:\n" +
                            "Llantas: %s\n" +
                            "Motor: %s\n" +
@@ -90,8 +89,6 @@ public class Auto {
                            "Velocidad: %d" +
                            "Costo: $%d", this.getAtaque(), this.getDefensa(),
                            this.getVelocidad(), this.getCosto());
-=======
-      
->>>>>>> 0f8f587ffa4b7fbf313db936ab7d45c6a7c85401
+
     }
 }
