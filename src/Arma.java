@@ -19,7 +19,7 @@ public abstract class Arma {
      * @return el ataque del arma.
      */
     public int getAtaque() {
-        //Código...
+        return ataque;
     }
 
     /**

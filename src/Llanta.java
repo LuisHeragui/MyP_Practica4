@@ -19,7 +19,7 @@ public abstract class Llanta {
      * @return el ataque de la llanta.
      */
     public int getAtaque() {
-        //Código...
+        return ataque;
     }
 
     /**
