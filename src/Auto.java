@@ -25,7 +25,11 @@ public class Auto {
      */
     public Auto(Llanta llanta, Motor motor, Carroceria carroceria,
                 Blindaje blindaje, Arma arma) {
-        //Código...
+        this.llanta = llanta;
+        this.motor = motor;
+        this.carroceria = carroceria;
+        this.blindaje = blindaje;
+        this.arma = arma;
     }
 
     /**
@@ -33,7 +37,8 @@ public class Auto {
      * @return el ataque del auto.
      */
     public int getAtaque() {
-        //Código...
+        return llanta.getAtaque() + motor.getAtaque() + carroceria.getAtaque() +
+               blindaje.getAtaque() + arma.getAtaque();
     }
 
     /**
@@ -41,7 +46,9 @@ public class Auto {
      * @return la defensa del auto.
      */
     public int getDefensa() {
-        //Código...
+        return llanta.getDefensa() + motor.getDefensa() +
+               carroceria.getDefensa() + blindaje.getDefensa()
+               + arma.getDefensa();
     }
 
     /**
@@ -49,7 +56,9 @@ public class Auto {
      * @return la velocidad del auto.
      */
     public int getVelocidad() {
-        //Código...
+      return llanta.getVelocidad() + motor.getVelocidad() +
+             carroceria.getVelocidad() + blindaje.getVelocidad()
+             + arma.getVelocidad();
     }
 
     /**
@@ -57,13 +66,15 @@ public class Auto {
      * @return el costo del auto.
      */
     public int getCosto() {
-        //Código...
+      return llanta.getCosto() + motor.getCosto() +
+             carroceria.getCosto() + blindaje.getCosto()
+             + arma.getCosto();
     }
 
     /**
      * Muestra los componentes y las características del auto.
      */
     public void muestraAuto() {
-        //Código...
+      
     }
 }

@@ -20,7 +20,7 @@ public abstract class Carroceria {
      * @return el ataque de la carroceria.
      */
     public int getAtaque() {
-        //Código...
+        return ataque;
     }
 
     /**
@@ -28,7 +28,7 @@ public abstract class Carroceria {
      * @return la defensa de la carroceria.
      */
     public int getDefensa() {
-        //Código...
+        return defensa;
     }
 
     /**
@@ -36,7 +36,7 @@ public abstract class Carroceria {
      * @return la velocidad de la carroceria.
      */
     public int getVelocidad() {
-        //Código...
+        return velocidad;
     }
 
     /**
@@ -44,7 +44,7 @@ public abstract class Carroceria {
      * @return el costo de la carroceria.
      */
     public int getCosto() {
-        //Código...
+        return costo;
     }
 
     /**
@@ -52,6 +52,6 @@ public abstract class Carroceria {
      * @return el tipo de la carroceria.
      */
     public String getTipo() {
-        //Código...
+        return tipo;
     }
 }

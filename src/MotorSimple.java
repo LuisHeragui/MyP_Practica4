@@ -7,6 +7,10 @@ public class MotorSimple extends Motor {
      * Constuye un motor simple.
      */
     public MotorSimple() {
-        //Código...
+      ataque = 22;
+      defensa = 25;
+      velocidad = 15;
+      costo = 60;
+      tipo = "Simple";
     }
 }

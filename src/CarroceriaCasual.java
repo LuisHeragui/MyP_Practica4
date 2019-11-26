@@ -7,6 +7,10 @@ public class CarroceriaCasual extends Carroceria {
      * Constuye una carroceria casual.
      */
     public CarroceriaCasual() {
-        //Código...
+      ataque = 34 ;
+      defensa = 50;
+      velocidad = 10;
+      costo = 70;
+      tipo = "Casual";
     }
 }
